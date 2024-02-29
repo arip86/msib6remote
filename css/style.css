@@ -1,0 +1,67 @@
+/* contoh selector tag di eksternal */
+p{
+    color: crimson;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+body{
+    
+    background-image:url('../img/back.avif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-color:aquamarine; */
+}
+fieldset, legend {
+    border-width: 1px;
+    border-color:brown;
+    border-radius: 30px;
+}
+legend {
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+table{
+    border: 10px;
+    margin: auto;
+}
+tr{
+    padding: 5px;
+    border: 1px solid green;
+}
+tr:hover{
+    background-color: blue;
+    color: red;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+
+}
+/* contoh selector id dapat masuk ke semua tag */
+#paragraph {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: aqua;
+}
+/* id yang dikhusukan untuk tag li */
+/* li#paragraph {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: aqua;
+} */
+ul, li, a.item:link, a.item:visited, a.item:active{
+    text-decoration: none; /* menghilangkan garis pada link*/
+    list-style: none; /* menghilangkan titik pada list */
+    display: block; /* mendisplay a sebagai block */
+    float: left; /* memposisikan a untuk ke bagian kiri */
+    padding: 2px 3px; /*memberi jarak dan membentuk persegi */
+    background-color: white; /* mewarnai block */
+}
+
