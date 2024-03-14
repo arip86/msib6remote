@@ -1,0 +1,56 @@
+<script>
+    let s1 = {"nama": "Andi", nilai:80};
+    let s2 = {"nama": "Ali", nilai:90};
+    let s3 = {"nama": "Aji", nilai:70};
+    let s4 = {"nama": "Ani", nilai:90};
+    let s5 = {"nama": "Ando", nilai:85};
+
+    let siswa = [s1,s2,s3,s4,s5];
+</script>
+<table style="padding: 10; text-align: center; width: 100%;">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Nilai</th>
+            <th>Keterangan</th>
+            <th>Grade</th>
+            <th>Predikat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <script>
+            var no = 1;
+            for(s of siswa){
+                //ternary 
+                let ket = (s.nilai >= 60) ? "lulus" : "gagal";
+                let grade = "";
+                let predikat = "";
+                //if multi kondisi
+                if(s.nilai > 85 && s.nilai <= 100) grade = "A";
+                else if (s.nilai > 75 && s.nilai <= 85) grade = "B";
+                else if (s.nilai >= 60 && s.nilai <= 75) grade = "C";
+                else if (s.nilai > 30 && s.nilai < 60) grade = "D";
+                else if (s.nilai >= 0 && s.nilai <= 30) grade = "E";
+                else grade = "";
+                switch(grade){
+                    case "A" : predikat = "Sempurna"; break;
+                    case "B" : predikat = "Baik"; break;
+                    case "C" : predikat = "Cukup"; break;
+                    case "D" : predikat = "Kurang"; break;
+                    case "E" : predikat = "buruk"; break;
+                    default : predikat = ""; break;
+                }
+                //tugasnya adalah tampilkan 
+                // 1. nomor 
+                // 2. nama 
+                // 3. nilai 
+                // 4. keterangan 
+                // 5. grade 
+                // 6. predikat
+                //sesuai latihan yang pagi dilakukan
+
+            }
+        </script>
+
+    </tbody>

@@ -1,0 +1,31 @@
+<script>
+    let angka;
+    //perulangan menggunakan increment
+    for(angka=1; angka <= 10; angka+=2){
+        document.write('<br> No. ' + angka);
+    }
+    document.write('<hr>');
+    //perulangan menggunakan decrement
+    let angka1;
+    for(angka1=10; angka1 >= 0; angka1--){
+        document.write('<br> No. '+angka1);
+    }
+    //looping menampilkan bilangan ganjil
+    document.write('<hr>');
+    let ganjil;
+    for(ganjil=1; ganjil<=30; ganjil++){
+        if(ganjil % 2 == 1) document.write("<br> Cetak Bilangan "+ ganjil);
+    }
+    document.write('<hr>');
+    let genap;
+    for(genap=1; genap<=30; genap++){
+        if(genap % 2 == 0) document.write("<br> Cetak Bilangan "+ genap);
+    }
+    document.write('<hr>');
+    //contoh looping while 
+    let y = 0;
+    while(y < 4){
+        document.write("<br> "+ y);
+        y++;
+    }
+</script>
